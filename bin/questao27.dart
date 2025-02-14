@@ -2,7 +2,7 @@
 
 extension CamelCase on String {
   String toCamelCase() {
-    return this.split(' ').map((palavra) {
+    return split(' ').map((palavra) {
       String primeiraLetra = palavra[0].toUpperCase();
       String resto = palavra.substring(1).toLowerCase();
       return '$primeiraLetra$resto';
